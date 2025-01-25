@@ -9,25 +9,25 @@
 
 #include <iostream>
 
-void KoalaBot::swapParts(Arms* part)
+void KoalaBot::swapParts(Arms& part)
 {
     const Arms old_part = this->_arms;
-    this->_arms = *part;
-    *part = old_part;
+    this->_arms = part;
+    part = old_part;
 }
 
-void KoalaBot::swapParts(Legs* part)
+void KoalaBot::swapParts(Legs& part)
 {
     const Legs old_part = this->_legs;
-    this->_legs = *part;
-    *part = old_part;
+    this->_legs = part;
+    part = old_part;
 }
 
-void KoalaBot::swapParts(Head* part)
+void KoalaBot::swapParts(Head& part)
 {
     const Head old_part = this->_head;
-    this->_head = *part;
-    *part = old_part;
+    this->_head = part;
+    part = old_part;
 }
 
 void KoalaBot::informations()

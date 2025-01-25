@@ -13,12 +13,12 @@
 class KoalaBot
 {
     public:
-        void setParts(const Arms* part) { this->_arms = *part; }
-        void setParts(const Legs* part) { this->_legs = *part; }
-        void setParts(const Head* part) { this->_head = *part; }
-        void swapParts(Arms* part);
-        void swapParts(Legs* part);
-        void swapParts(Head* part);
+        void setParts(const Arms& part) { this->_arms = part; }
+        void setParts(const Legs& part) { this->_legs = part; }
+        void setParts(const Head& part) { this->_head = part; }
+        void swapParts(Arms& part);
+        void swapParts(Legs& part);
+        void swapParts(Head& part);
         void informations();
         bool status();
 
