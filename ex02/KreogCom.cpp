@@ -23,9 +23,9 @@ KreogCom::~KreogCom()
 
 void KreogCom::addCom(int x, int y, int serial)
 {
-    if (this->getCom() != nullptr)
-        return getCom()->addCom(x, y, serial);
     const auto new_kreogCom = new KreogCom(x, y, serial);
+
+    new_kreogCom->_nextKreogCom = this->_nextKreogCom;
     this->_nextKreogCom = new_kreogCom;
 }
 
