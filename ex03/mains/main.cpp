@@ -10,9 +10,9 @@
 #include "Phaser.hpp"
 #include "Sounds.hpp"
 
-std::string Sounds::Plasma = "Blop...BOUM";
-std::string Sounds::Regular = "bzz...ZAP";
-std::string Sounds::Rocket = "CLONC.......KABOUM";
+const std::string Sounds::Plasma = "Blop...BOUM";
+const std::string Sounds::Regular = "bzz...ZAP";
+const std::string Sounds::Rocket = "CLONC.......KABOUM";
 
 int main()
 {

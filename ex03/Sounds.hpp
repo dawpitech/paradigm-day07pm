@@ -13,8 +13,8 @@
 class Sounds
 {
     public:
-        static std::string Regular;
-        static std::string Plasma;
-        static std::string Rocket;
+        const static std::string Regular;
+        const static std::string Plasma;
+        const static std::string Rocket;
 };
 #endif //SOUNDS_HPP
