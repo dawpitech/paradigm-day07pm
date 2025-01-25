@@ -25,5 +25,6 @@ class KreogCom
         const int _x;
         const int _y;
         KreogCom* _nextKreogCom = nullptr;
+        KreogCom* _prevKreogCom = nullptr;
 };
 #endif //KREOGCOM_HPP
