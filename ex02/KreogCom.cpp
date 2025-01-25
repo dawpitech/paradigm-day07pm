@@ -48,7 +48,10 @@ void KreogCom::ping() const
 
 void KreogCom::locateSquad() const
 {
-    if (this->_nextKreogCom != nullptr)
-        this->_nextKreogCom->locateSquad();
+    auto com = this->_nextKreogCom;
+    while (com != nullptr) {
+        com->ping();
+        com = com->_nextKreogCom;
+    }
     this->ping();
 }
