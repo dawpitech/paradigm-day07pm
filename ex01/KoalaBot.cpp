@@ -30,7 +30,7 @@ void KoalaBot::swapParts(Head& part)
     part = old_part;
 }
 
-void KoalaBot::informations()
+void KoalaBot::informations() const
 {
     std::cout << "[KoalaBot] " << this->_serial << std::endl;
     this->_arms.informations();
@@ -38,7 +38,7 @@ void KoalaBot::informations()
     this->_head.informations();
 }
 
-bool KoalaBot::status()
+bool KoalaBot::status() const
 {
     return this->_arms.isFunctional() && this->_legs.isFunctional()
         && this->_head.isFunctional();

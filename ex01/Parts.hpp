@@ -14,9 +14,9 @@ class Arms
 {
     public:
         explicit Arms(std::string serial = "A-01", bool functional = true);
-        bool isFunctional() { return this->_functional; }
-        std::string serial() { return this->_serial; }
-        void informations();
+        bool isFunctional() const { return this->_functional; }
+        std::string serial() const { return this->_serial; }
+        void informations() const;
 
     protected:
         bool _functional;
@@ -27,9 +27,9 @@ class Legs
 {
     public:
         explicit Legs(std::string serial = "L-01", bool functional = true);
-        bool isFunctional() { return this->_functional; }
-        std::string serial() { return this->_serial; }
-        void informations();
+        bool isFunctional() const { return this->_functional; }
+        std::string serial() const { return this->_serial; }
+        void informations() const;
 
     protected:
         bool _functional;
@@ -40,9 +40,9 @@ class Head
 {
     public:
         explicit Head(std::string serial = "H-01", bool functional = true);
-        bool isFunctional() { return this->_functional; }
-        std::string serial() { return this->_serial; }
-        void informations();
+        bool isFunctional() const { return this->_functional; }
+        std::string serial() const { return this->_serial; }
+        void informations() const;
 
     protected:
         bool _functional;

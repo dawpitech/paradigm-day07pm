@@ -19,8 +19,8 @@ class KoalaBot
         void swapParts(Arms& part);
         void swapParts(Legs& part);
         void swapParts(Head& part);
-        void informations();
-        bool status();
+        void informations() const;
+        bool status() const;
 
     protected:
         Arms _arms;

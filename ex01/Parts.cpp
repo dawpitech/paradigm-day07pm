@@ -16,7 +16,7 @@ Arms::Arms(std::string serial, bool functional)
     this->_functional = functional;
 }
 
-void Arms::informations()
+void Arms::informations() const
 {
     std::cout << std::format(
         "\t[Parts] Arms {} status : {}\n",
@@ -29,7 +29,7 @@ Legs::Legs(std::string serial, bool functional)
     this->_functional = functional;
 }
 
-void Legs::informations()
+void Legs::informations() const
 {
     std::cout << std::format(
         "\t[Parts] Legs {} status : {}\n",
@@ -42,7 +42,7 @@ Head::Head(std::string serial, bool functional)
     this->_functional = functional;
 }
 
-void Head::informations()
+void Head::informations() const
 {
     std::cout << std::format(
         "\t[Parts] Head {} status : {}\n",
